@@ -41665,19 +41665,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shopify_polaris__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shopify/polaris */ "./node_modules/@shopify/polaris/index.es.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+ // import {
+//   Layout,
+//   Page,
+//   Card,
+//   Button,
+//   FormLayout,
+//   TextStyle,
+// } from '@shopify/polaris';
 
+var img = 'https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg';
 
 var Index = function Index() {
-  return __jsx("div", null, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["TextStyle"], {
-    variation: "positive"
-  }, "Sample app using React and Next.js"));
+  return __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Page"], null, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Layout"], null, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["EmptyState"], {
+    heading: "Get Started Bundling your Products",
+    action: {
+      content: 'Select products',
+      onAction: function onAction() {
+        return console.log('clicked');
+      }
+    },
+    image: img
+  }, __jsx("p", null, "Select products to change their price temporarily."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fdavidgutierrez%2FDesktop%2FShopify-Bundle-Application%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************************************/
@@ -41700,5 +41716,5 @@ module.exports = dll_b35e09dc2ca94ac6d9c1;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
